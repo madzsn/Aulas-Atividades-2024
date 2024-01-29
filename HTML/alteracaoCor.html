@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Colors</title>
+    <style>
+        #meuElemento {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="meuElemento"></div>
+    <button onclick="alterarEstilo()">Change Style</button>
+    
+    <script>
+        function alterarEstilo() {
+            const meuElemento = document.getElementById('meuElemento');
+
+            // Alterando entre duas cores de fundo
+            if (meuElemento.style.backgroundColor === 'lightblue') {
+                meuElemento.style.backgroundColor = 'lightcoral';
+            } else {
+                meuElemento.style.backgroundColor = 'lightblue';
+            }
+        }
+    </script>
+</body>
+</html>
